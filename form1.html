@@ -1,8 +1,18 @@
 <!DOCTYPE html>
 
 <head>
-    <title>Form Demo</title>
+    <title>Registration Form</title>
 </head>
+
+<!-- http://127.0.0.1:5500/form1.html
+    ?fname=Avi
+    &lname=Draznin
+    &email=quizpace%40yahoo.com
+    &password=Toto12345
+    &birthdate=1989-11-28
+    &fcolor=%239437ff
+    &filetype=CSS
+    &animal=dog -->
 
 <body>
     <br />
@@ -12,13 +22,13 @@
         <input type="text" id="fname" name="fname" required/>
         <br /> <br />
         <label for="lname"><b>Last Name:</b> </label>
-        <input type="text" id="lname" name="lname" required/>
+        &nbsp;<input type="text" id="lname" name="lname" required/>
         <br /> <br />
         <label for="email"><b>Email:</b> </label>
-        <input type="email" id="email" name="email" required/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" id="email" name="email" required/>
         <br /> <br />
         <label for="password"><b>Password:</b> &nbsp; </label>
-        <input type="password" id="password" name="password" required/>        
+        &nbsp;<input type="password" id="password" name="password" required/>        
         <br /> <br />
         <label for="birthdate"><b>Birth-date:</b> </label>
         <input type="date" id="birthdate" name="birthdate" required/>
@@ -28,20 +38,21 @@
         <br /> <br />
         <label for="filetype"><b>Favorite File-type:</b> </label>
         <select id="filetype" id="filetype" name="filetype" required>
+        <option value="">Please Select:</option>
         <option value="HTML">HTML</option>
         <option value="CSS">CSS</option>
         <option value="JS">JS</option>
         </select>
         <br /> <br />
         <label for="vegan"><b>Vegan?</b> </label>
-        <input type="checkbox" id="vegan" name="vegan" required/>
+        <input type="checkbox" id="vegan" name="vegan">
         <br /> <br />
         <label for="animal"><b>Favorite animal:</b> </label>
-        <input type="radio" id="dog" name="animal" value="dog" required/>
+        <input type="radio" id="dog" name="animal" value="dog" required="required">
        <label for="dog">Dog</label>
-       <input type="radio" id="cat" name="animal" value="cat" required/>
+       <input type="radio" id="cat" name="animal" value="cat" required="required">
        <label for="cat">Cat</label>
-       <input type="radio" id="fish" name="animal" value="fish" required/>
+       <input type="radio" id="fish" name="animal" value="fish" required="required">
        <label for="fish">Fish</label>
        <br /><br />
         <input type="submit" value="submit">
