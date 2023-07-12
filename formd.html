@@ -54,7 +54,7 @@
               <form id="stripe-login">
                 <div class="field padding-bottom--24">
                   <label for="email">Email</label>
-                  <input type="email" name="email">
+                  <input type="email" name="email" required>
                 </div>
                 <div class="field padding-bottom--24">
                   <div class="grid--50-50">
@@ -64,13 +64,13 @@
                       <br />
                     </div>
                   </div>
-                  <input type="password" name="password">
+                  <input type="password" name="password" required>
                 </div>
                 
                 
                     <div class="text">
                       <label for="textarea">Tell us a little about yourself:</label>
-                      <textarea for="text1" name="text1"></textarea>
+                      <textarea for="text1" name="text1" required></textarea>
                       <div class="text">
                       </div>
                     </div>
@@ -93,9 +93,8 @@
                 <div class="field field-checkbox padding-bottom--24 flex-flex align-center">
                   <label for="checkbox">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <input type="checkbox" name="checkbox">I agree to the 
+                    <input type="checkbox" name="checkbox" required>I agree to the 
                     <a href="http://127.0.0.1:5500/terms%20of%20use.html">&nbsp;terms of service</a>
-            
                   </label>
                 </div>
                 <div class="field padding-bottom--24">
