@@ -46,10 +46,11 @@
       <div class="box-root padding-top--24 flex-flex flex-direction--column" style="flex-grow: 1; z-index: 9;">
         <div class="box-root padding-top--48 padding-bottom--24 flex-flex flex-justifyContent--center">
         </div>
+        
         <div class="formbg-outer">
           <div class="formbg">
             <div class="formbg-inner padding-horizontal--48">
-              <span class="padding-bottom--15">Sign Up:</span>
+              <span class="padding-bottom--15">Creat An Account:</span>
               <form id="stripe-login">
                 <div class="field padding-bottom--24">
                   <label for="email">Email</label>
@@ -60,25 +61,47 @@
                     <label for="password">Password</label>
                     <div class="reset-pass">
                       <a href="#">Forgot your password?</a>
+                      <br />
                     </div>
                   </div>
                   <input type="password" name="password">
                 </div>
-                  <div class="field padding-bottom--24">
-                    <div class="grid--50-50">
-                      <label for="password">User name</label>
+                
+                
+                    <div class="text">
+                      <label for="textarea">Tell us a little about yourself:</label>
+                      <textarea for="text1" name="text1"></textarea>
+                      <div class="text">
+                      </div>
                     </div>
-                    <input type="password" name="password">
-                  </div>                                  
+                  </div>
+               
+                  <div class="field field-checkbox padding-bottom--24 flex-flex align-center">
+                <label for="filetype">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select Your Age:&nbsp;&nbsp;</label>
+                <select id="filetype" id="filetype" name="filetype" required>
+                  
+                <option value="">Select Age:</option>
+                <option value="under 18">Under 18</option>
+                <option value="2">18-35</option>
+                <option value="3">35-46</option>
+                <option value="4">46+</option>
+                <br /><br />
+                </select>
+                </div>
+
+                <br />
                 <div class="field field-checkbox padding-bottom--24 flex-flex align-center">
                   <label for="checkbox">
-                    <input type="checkbox" name="checkbox"> Stay signed in for a week
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" name="checkbox">I agree to the 
+                    <a href="http://www.google.com">&nbsp;terms of service</a>
+            
                   </label>
                 </div>
                 <div class="field padding-bottom--24">
                   <input type="submit" name="submit" value="Continue">
                 </div>
-
+        
               </form>
             </div>
           </div>
